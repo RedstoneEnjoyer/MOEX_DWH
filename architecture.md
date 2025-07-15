@@ -1,46 +1,23 @@
-## Отличная стратегия! Можно легко начать локально и мигрировать
-
-Это очень разумный подход - начать с локального MVP и затем поэтапно мигрировать в облако. Большинство компонентов можно сделать cloud-agnostic.
-
-## Локальная версия (MVP)
+## Локальная версия
 
 ### **Архитектура без облака**
 ```
-Parser → Local File System → Cron/Scheduler → 
-Python ETL Script → Local ClickHouse → dbt → Grafana
+Parser -> Local File System (json) -> Cron / Scheduler -> 
+Python ETL Script -> Local ClickHouse -> dbt -> Grafana / BI tool
 ```
 
 ### **Технологический стек**
-- **Parser**: Python скрипт с requests
-- **Буферизация**: Локальные JSON/CSV файлы в папках
+- **Parser**: Python скрипт с playwright
+- **Буферизация**: Локальные JSON файлы в папках
 - **Планировщик**: Cron или Python APScheduler
 - **ETL**: Python скрипты с pandas
 - **БД**: ClickHouse в Docker контейнере
-- **Трансформации**: dbt Core (бесплатная версия)
+- **Трансформации**: dbt Core
 - **Мониторинг**: Grafana + Prometheus
 
 ### **Структура проекта**
 ```
-stock-pipeline/
-├── parser/
-│   ├── stock_parser.py
-│   └── config.py
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── archive/
-├── etl/
-│   ├── validator.py
-│   ├── enricher.py
-│   └── loader.py
-├── dbt_project/
-│   ├── models/
-│   ├── tests/
-│   └── dbt_project.yml
-├── monitoring/
-│   ├── grafana/
-│   └── prometheus/
-└── docker-compose.yml
+
 ```
 
 ### **Ключевые принципы для легкой миграции**
@@ -132,24 +109,6 @@ class S3StorageAdapter(StorageAdapter):
 
 ## Практические советы для MVP
 
-### **Начните с простого**
-```python
-# parser/main.py
-import schedule
-import time
-
-def job():
-    # Парсинг данных
-    # Сохранение в CSV
-    # Запуск ETL
-    pass
-
-schedule.every(30).minutes.do(job)
-while True:
-    schedule.run_pending()
-    time.sleep(1)
-```
-
 ### **Используйте Docker Compose**
 ```yaml
 # Сразу приучитесь к контейнерам
@@ -170,23 +129,6 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 ```
-
-## Преимущества такого подхода
-
-### **Для изучения**
-- Понимаете каждый компонент
-- Видите проблемы, которые решает облако
-- Постепенное освоение сложности
-
-### **Для демонстрации**
-- Показываете эволюцию мышления
-- Демонстрируете cloud-native принципы
-- Объясняете почему выбрали облако
-
-### **Для резюме**
-- Опыт и с on-premise и с облачными решениями
-- Понимание архитектурных компромиссов
-- Навыки миграции в облако
 
 ## Roadmap разработки
 
@@ -209,5 +151,3 @@ logging.basicConfig(
 - S3 для данных
 - Lambda для ETL
 - Managed ClickHouse
-
-Такой подход позволит вам глубже понять каждый компонент и сделать осознанный выбор облачных технологий.
