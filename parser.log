@@ -83,3 +83,143 @@ Call log:
 2025-07-15 17:42:13,784 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
 2025-07-15 17:42:13,785 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
 2025-07-15 17:42:22,461 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 17:46:19,012 - INFO - Начало обработки 5 тикеров
+2025-07-15 17:46:19,248 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 17:46:19,249 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 17:46:19,249 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 17:46:19,250 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 17:46:19,251 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 17:46:28,185 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 17:46:55,882 - INFO - Начало обработки 5 тикеров
+2025-07-15 17:46:56,131 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 17:46:56,132 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 17:46:56,133 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 17:46:56,134 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 17:46:56,135 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 17:47:04,783 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 17:47:17,478 - INFO - Начало обработки 5 тикеров
+2025-07-15 17:47:17,715 - ERROR - Ошибка при обработке SBER: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:17,715 - ERROR - Ошибка при обработке VTBR: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:17,715 - ERROR - Ошибка при обработке GAZP: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:17,715 - ERROR - Ошибка при обработке LKOH: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:17,715 - ERROR - Ошибка при обработке NVTK: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:17,738 - INFO - Успешно обработано 0 из 5 тикеров
+2025-07-15 17:47:26,993 - INFO - Начало обработки 5 тикеров
+2025-07-15 17:47:27,221 - ERROR - Ошибка при обработке SBER: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:27,221 - ERROR - Ошибка при обработке VTBR: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:27,221 - ERROR - Ошибка при обработке GAZP: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:27,221 - ERROR - Ошибка при обработке LKOH: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:27,221 - ERROR - Ошибка при обработке NVTK: name 'PlaywrightTimeoutError' is not defined
+2025-07-15 17:47:27,243 - INFO - Успешно обработано 0 из 5 тикеров
+2025-07-15 17:47:31,054 - INFO - Начало обработки 5 тикеров
+2025-07-15 17:47:31,292 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 17:47:31,293 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 17:47:31,294 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 17:47:31,296 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 17:47:31,296 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 17:47:39,230 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 18:28:41,112 - ERROR - Ошибка в pull_data(): cannot access local variable 'tickers' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/user0/Projects/dataWH/src/pull_data.py", line 34, in pull_data
+    with open(STORAGE_PATH/tickers.txt, "r") as file:
+                           ^^^^^^^
+UnboundLocalError: cannot access local variable 'tickers' where it is not associated with a value
+2025-07-15 18:31:11,441 - INFO - Начало обработки 5 тикеров
+2025-07-15 18:31:11,956 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 18:31:11,956 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 18:31:11,957 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 18:31:11,959 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 18:31:11,959 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 18:31:20,692 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 18:37:20,779 - INFO - Начало обработки 5 тикеров
+2025-07-15 18:37:21,002 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 18:37:21,003 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 18:37:21,003 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 18:37:21,004 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 18:37:21,005 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 18:37:29,377 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 18:38:08,377 - INFO - Начало обработки 5 тикеров
+2025-07-15 18:38:08,613 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 18:38:08,614 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 18:38:08,615 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 18:38:08,618 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 18:38:08,618 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 18:38:18,524 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 18:38:38,286 - INFO - Начало обработки 5 тикеров
+2025-07-15 18:38:38,512 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 18:38:38,513 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 18:38:38,514 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 18:38:38,516 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 18:38:38,517 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 18:38:46,449 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 18:40:06,824 - INFO - Начало обработки 5 тикеров
+2025-07-15 18:40:07,070 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 18:40:07,071 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 18:40:07,071 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 18:40:07,073 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 18:40:07,074 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 18:40:14,913 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 18:42:06,408 - INFO - Начало обработки 5 тикеров
+2025-07-15 18:42:06,653 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 18:42:06,653 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 18:42:06,654 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 18:42:06,656 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 18:42:06,657 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 18:42:15,085 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 19:01:40,769 - INFO - Начало обработки 5 тикеров
+2025-07-15 19:01:41,000 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 19:01:41,002 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 19:01:41,003 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 19:01:41,005 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 19:01:41,006 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 19:01:48,968 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 19:05:31,633 - INFO - Начало обработки 5 тикеров
+2025-07-15 19:05:31,862 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 19:05:31,862 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 19:05:31,863 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 19:05:31,865 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 19:05:31,865 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 19:05:40,420 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 19:06:03,969 - INFO - Начало обработки 5 тикеров
+2025-07-15 19:06:04,201 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 19:06:04,202 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 19:06:04,203 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 19:06:04,204 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 19:06:04,205 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 19:06:12,324 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 19:06:31,587 - INFO - Начало обработки 5 тикеров
+2025-07-15 19:06:31,827 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 19:06:31,828 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 19:06:31,829 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 19:06:31,830 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 19:06:31,831 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 19:06:42,613 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 19:06:56,203 - INFO - Начало обработки 5 тикеров
+2025-07-15 19:06:56,427 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 19:06:56,427 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 19:06:56,428 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 19:06:56,430 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 19:06:56,430 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 19:07:05,990 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 19:10:05,185 - INFO - Начало обработки 5 тикеров
+2025-07-15 19:10:05,407 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 19:10:05,409 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 19:10:05,410 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 19:10:05,413 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 19:10:05,413 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 19:10:13,958 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-15 19:10:13,958 - ERROR - Ошибка в pull_data(): name 'tmp' is not defined
+Traceback (most recent call last):
+  File "/home/user0/Projects/dataWH/src/pull_data.py", line 81, in pull_data
+    save_data(valid_results)
+  File "/home/user0/Projects/dataWH/src/pull_data.py", line 26, in save_data
+    filename = STORAGE_PATH / tmp / f"{ticker}.jsonl"
+                              ^^^
+NameError: name 'tmp' is not defined
+2025-07-15 19:10:29,036 - INFO - Начало обработки 5 тикеров
+2025-07-15 19:10:29,274 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 19:10:29,275 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 19:10:29,275 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 19:10:29,278 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 19:10:29,278 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 19:10:37,196 - INFO - Успешно обработано 5 из 5 тикеров

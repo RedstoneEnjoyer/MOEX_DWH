@@ -1,11 +1,5 @@
-from playwright.async_api import (
-    async_playwright,
-    TimeoutError as PlaywrightTimeoutError,
-)
-
-# from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
-import logging
 import asyncio
+import logging
 
 """
 Функция парсит данные по ссылке на актив MOEX в текущую минуту
@@ -16,8 +10,8 @@ import asyncio
 """
 
 
-async def fetch_data(browser, code):
-    url = f"https://www.moex.com/ru/issue.aspx?board=TQBR&code={code}"
+async def fetch_data(browser, ticker):
+    url = f"https://www.moex.com/ru/issue.aspx?board=TQBR&code={ticker}"
     try:
         logging.info(f"Fetching {url}")
         page = await browser.new_page()
@@ -34,19 +28,19 @@ async def fetch_data(browser, code):
 
         tooltip = await page.query_selector("ul.tooltip")
         if not tooltip:
-            logging.warning(f"{code}: Tooltip not found")
+            logging.warning(f"{ticker}: Tooltip not found")
             await page.close()
             return None
 
         date_text = await tooltip.query_selector(".date")
         if not date_text:
-            logging.warning(f"{code}: Date not found")
+            logging.warning(f"{ticker}: Date not found")
             await page.close()
             return None
 
         date_info = (await date_text.inner_text()).split(" ")
         data = {
-            "code": code,
+            "code": ticker,
             "Date": date_info[0] if len(date_info) > 0 else None,
             "Time": date_info[1] if len(date_info) > 1 else None,
             "Open": None,
@@ -93,7 +87,7 @@ async def fetch_data(browser, code):
         await page.close()
         return data
     except PlaywrightTimeoutError as e:
-        logging.error(f"{code}: Playwright timeout: {e}")
+        logging.error(f"{ticker}: Playwright timeout: {e}")
     except Exception as e:
-        logging.exception(f"{code}: Failed to fetch data.")
+        logging.exception(f"{ticker}: Failed to fetch data.")
     return None
