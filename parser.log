@@ -1,0 +1,85 @@
+2025-07-15 16:51:46,501 - INFO - Начало обработки 4 тикеров
+2025-07-15 16:51:46,963 - ERROR - Ошибка при обработке SBER: name 'fetch_data' is not defined
+2025-07-15 16:51:46,963 - ERROR - Ошибка при обработке LQDT: name 'fetch_data' is not defined
+2025-07-15 16:51:46,963 - ERROR - Ошибка при обработке VTBR: name 'fetch_data' is not defined
+2025-07-15 16:51:46,964 - ERROR - Ошибка при обработке GAZP: name 'fetch_data' is not defined
+2025-07-15 16:51:46,988 - INFO - Успешно обработано 0 из 4 тикеров
+2025-07-15 16:52:13,384 - INFO - Начало обработки 4 тикеров
+2025-07-15 16:52:13,611 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 16:52:13,612 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LQDT
+2025-07-15 16:52:13,612 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 16:52:13,613 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 16:52:24,964 - ERROR - GAZP: Failed to fetch data.
+Traceback (most recent call last):
+  File "/home/user0/Projects/dataWH/src/parser.py", line 74, in fetch_data
+    volume_txt = volume_span.inner_text().split(":")[-1].split("\xa0₽")[0].replace(" ", "").replace(",", ".")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'split'
+2025-07-15 16:52:24,994 - ERROR - SBER: Failed to fetch data.
+Traceback (most recent call last):
+  File "/home/user0/Projects/dataWH/src/parser.py", line 74, in fetch_data
+    volume_txt = volume_span.inner_text().split(":")[-1].split("\xa0₽")[0].replace(" ", "").replace(",", ".")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'split'
+2025-07-15 16:52:25,098 - ERROR - VTBR: Failed to fetch data.
+Traceback (most recent call last):
+  File "/home/user0/Projects/dataWH/src/parser.py", line 74, in fetch_data
+    volume_txt = volume_span.inner_text().split(":")[-1].split("\xa0₽")[0].replace(" ", "").replace(",", ".")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'split'
+2025-07-15 16:52:52,209 - ERROR - LQDT: Playwright timeout: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("li[data-interval=\"1\"][data-duration=\"60\"]")
+
+2025-07-15 16:52:52,304 - INFO - Успешно обработано 0 из 4 тикеров
+2025-07-15 16:54:22,478 - INFO - Начало обработки 4 тикеров
+2025-07-15 16:54:22,833 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 16:54:22,833 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LQDT
+2025-07-15 16:54:22,834 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 16:54:22,834 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 16:55:00,061 - ERROR - LQDT: Playwright timeout: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("li[data-interval=\"1\"][data-duration=\"60\"]")
+
+2025-07-15 16:55:00,092 - INFO - Успешно обработано 3 из 4 тикеров
+2025-07-15 17:28:43,616 - INFO - Начало обработки 4 тикеров
+2025-07-15 17:28:43,873 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 17:28:43,874 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LQDT
+2025-07-15 17:28:43,874 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 17:28:43,875 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 17:29:18,005 - ERROR - LQDT: Playwright timeout: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("li[data-interval=\"1\"][data-duration=\"60\"]")
+
+2025-07-15 17:29:18,033 - INFO - Успешно обработано 3 из 4 тикеров
+2025-07-15 17:32:11,716 - INFO - Начало обработки 6 тикеров
+2025-07-15 17:32:11,967 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 17:32:11,968 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 17:32:11,969 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 17:32:11,969 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 17:32:11,970 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=AKMM
+2025-07-15 17:32:20,168 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 17:32:46,843 - ERROR - AKMM: Playwright timeout: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("li[data-interval=\"1\"][data-duration=\"60\"]")
+
+2025-07-15 17:32:46,876 - INFO - Успешно обработано 5 из 6 тикеров
+2025-07-15 17:36:41,322 - INFO - Начало обработки 6 тикеров
+2025-07-15 17:36:41,557 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 17:36:41,559 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 17:36:41,559 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 17:36:41,562 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 17:36:41,562 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=AKMM
+2025-07-15 17:36:49,064 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 17:37:15,451 - ERROR - AKMM: Playwright timeout: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("li[data-interval=\"1\"][data-duration=\"60\"]")
+
+2025-07-15 17:37:15,480 - INFO - Успешно обработано 5 из 6 тикеров
+2025-07-15 17:42:13,545 - INFO - Начало обработки 5 тикеров
+2025-07-15 17:42:13,782 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-15 17:42:13,783 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-15 17:42:13,783 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-15 17:42:13,784 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-15 17:42:13,785 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-15 17:42:22,461 - INFO - Успешно обработано 5 из 5 тикеров
