@@ -14,7 +14,10 @@ STORAGE_PATH = Path(__file__).parent.parent / "storage"
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("parser.log"), logging.StreamHandler()],
+    handlers=[
+        logging.FileHandler(str(Path("logs") / "parser.log"), encoding='utf-8'),
+        logging.StreamHandler()
+    ],
 )
 
 """

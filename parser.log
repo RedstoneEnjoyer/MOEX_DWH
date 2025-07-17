@@ -258,3 +258,10 @@ NameError: name 'tmp' is not defined
 2025-07-16 13:07:54,617 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
 2025-07-16 13:07:54,618 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
 2025-07-16 13:08:04,826 - INFO - Успешно обработано 5 из 5 тикеров
+2025-07-16 16:34:28,123 - INFO - Начало обработки 5 тикеров
+2025-07-16 16:34:28,999 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=SBER
+2025-07-16 16:34:29,002 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=VTBR
+2025-07-16 16:34:29,005 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=GAZP
+2025-07-16 16:34:29,010 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=LKOH
+2025-07-16 16:34:29,011 - INFO - Fetching https://www.moex.com/ru/issue.aspx?board=TQBR&code=NVTK
+2025-07-16 16:34:47,201 - INFO - Успешно обработано 5 из 5 тикеров
